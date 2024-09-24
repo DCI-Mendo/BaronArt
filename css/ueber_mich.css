@@ -3,7 +3,8 @@
   src: url(../fonts/Sacramento-Regular.ttf); }
 body {
   background-image: url(../images/Hintergrund.jpg);
-  background-size: cover; }
+  background-size: cover;
+  color: white; }
 
 nav {
   margin: 10px; }
@@ -27,7 +28,10 @@ div {
   transform: rotate(350deg);
   -webkit-transform: rotate(350deg); }
 
+a {
+  color: white; }
+
 a:visited {
-  color: blue; }
+  color: white; }
 
 /*# sourceMappingURL=ueber_mich.css.map */

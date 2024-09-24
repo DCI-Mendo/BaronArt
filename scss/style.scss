@@ -21,11 +21,14 @@ body {
     height: 100px;
     padding: 25px;
     position: relative;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+
 
     a {
         border: 5px rgb(113, 113, 192) solid;
         padding: 10px;
         margin: 10px;
+        color: white;
     }
 }
 
@@ -40,25 +43,34 @@ body {
 
     h1 {
         font-family: magnificent;
-        color: rgb(101, 147, 216);
+        color: rgb(141, 148, 245);
         font-size: 350%;
         margin: 65px;
+
     }
 
 }
-h2{
+
+h2 {
     font-size: 50px;
-}
-p{
-    padding: 40px;
-    font-size: 20px;
+    color: white;
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
 }
-ul{
+
+p {
+    padding: 40px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+}
+
+ul {
     line-height: 30px;
     font-size: 20px;
+    color: white;
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
 }
+
 section {
     img {
         margin: 50px;
@@ -74,10 +86,16 @@ footer {
     position: fixed;
     left: 0px;
     bottom: 0px;
-    img{
+
+    img {
         height: 50px;
     }
 }
-a:visited{
-    color: blue;
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
 }

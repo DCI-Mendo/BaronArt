@@ -2,17 +2,22 @@
     font-family: magnificent;
     src: url(../fonts/Sacramento-Regular.ttf);
 }
-body{
+
+body {
     background-image: url(../images/Hintergrund.jpg);
     background-size: cover;
+    color: white;
 }
-nav{
+
+nav {
     margin: 10px;
 }
-h3{
+
+h3 {
     font-size: 30px;
 }
-main{
+
+main {
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
@@ -20,15 +25,21 @@ main{
     line-height: 30px;
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
 }
-div{
+
+div {
     font-family: magnificent;
     color: rgb(101, 147, 216);
     font-size: 450%;
-    margin-left: 35%;            
-    transform: rotate(350deg); 
+    margin-left: 35%;
+    transform: rotate(350deg);
     -webkit-transform: rotate(350deg);
 
 }
-a:visited{
-    color: blue;
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
 }
