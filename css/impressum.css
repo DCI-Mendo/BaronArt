@@ -1,0 +1,7 @@
+body{
+    background-image: url(../images/Hintergrund.jpg);
+    background-size: cover;
+}
+a:visited{
+    color: blue;
+}
