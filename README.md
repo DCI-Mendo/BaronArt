@@ -5,13 +5,15 @@
 
 ## Inhaltsverzeichnis
 
-- [Über das Projekt](#über-das-projekt)
-- [Technologien](#technologien)
-- [Installation und Setup](#installation-und-setup)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Mitwirkende](#mitwirkende)
-- [Lizenz](#lizenz)
+- [BaronArt](#baronart)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [Über das Projekt](#über-das-projekt)
+  - [Technologien](#technologien)
+  - [Installation und Setup](#installation-und-setup)
+  - [Features](#features)
+  - [Screenshots](#screenshots)
+  - [Mitwirkende](#mitwirkende)
+  - [Lizenz](#lizenz)
 
 ## Über das Projekt
 
@@ -57,7 +59,6 @@ Falls du das Projekt lokal auf deinem Rechner laufen lassen möchtest, folge die
 
 ![BaronArt Screenshot](https://dci-mendo.github.io/BaronArt/path/to/screenshot.jpg)
 
-*(Optional: Hier könntest du einige Screenshots der Seite einfügen, um das Layout zu zeigen.)*
 
 ## Mitwirkende
 
