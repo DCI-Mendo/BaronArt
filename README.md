@@ -57,7 +57,7 @@ Falls du das Projekt lokal auf deinem Rechner laufen lassen möchtest, folge die
 
 ## Screenshots
 
-![BaronArt Screenshot](https://dci-mendo.github.io/BaronArt/path/to/screenshot.jpg)
+![BaronArt Screenshot](https://dci-mendo.github.io/BaronArt/images/BaronArt-Screenshot.png)
 
 
 ## Mitwirkende
