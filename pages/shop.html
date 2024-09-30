@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/chart.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="../css/shop.css" />
+    <link href="../fontawsome/css/fontawesome.css" rel="stylesheet" />
+    <link href="../fontawsome/css/brands.css" rel="stylesheet" />
+    <link href="../fontawsome/css/solid.css" rel="stylesheet" />
+</head>
+
+<body>
     <nav>
-      <a href="../">Home</a>
+        <a href="../">Home</a>
+        <div style="position: relative; display: inline-block;"></div>
+        <a href="chart.html" class="icon-link" id="iconLink">
+            <i class="fa-solid fa-cart-shopping" style="font-size: 40px;"></i>
+            <span id="totalCounter" class="counter">0</span>
+        </a>
+        </div>
     </nav>
     <header>
-      <div class="hintergrund">
-        <h1>Baron Art</h1>
-      </div>
+        <div class="hintergrund">
+            <h1>Baron Art</h1>
+        </div>
+        <h2>Willkommen in meinem Shop</h2>
     </header>
+    <main>
+        <article>
+            <img src="../images/Herunterladen (1).jpg" alt="Statue">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit est, esse aliquam explicabo
+                incidunt!</p>
+            <p><strong>Preis</strong> XXX.XX€</p>
+            <button class="click-button">Kaufen</button>
+        </article>
+        <article>
+            <img src="../images/Herunterladen (2).jpg" alt="Statue">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit est, esse aliquam explicabo
+                incidunt!</p>
+            <p><strong>Preis</strong> XXX.XX€</p>
+            <button class="click-button">Kaufen</button>
+        </article>
+        <article>
+            <img src="../images/Herunterladen (3).jpg" alt="Statue">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit est, esse aliquam explicabo
+                incidunt!</p>
+            <p><strong>Preis</strong> XXX.XX€</p>
+            <button class="click-button">Kaufen</button>
+        </article>
+
+    </main>
+    <script>
+        let totalCount = 0;  // Gemeinsamer Zähler für alle Buttons
+        const totalCounterElement = document.getElementById('totalCounter');  // Element für die Anzeige des Zählers
+
+        // Klickanzahl aus localStorage laden, wenn vorhanden
+        let storedCount = localStorage.getItem('clickCount');
+        if (storedCount) {
+            totalCount = parseInt(storedCount, 10);
+            totalCounterElement.innerText = totalCount;
+            totalCounterElement.style.display = 'block';
+        }
+
+        // Alle Buttons mit der Klasse 'click-button' auswählen
+        const buttons = document.querySelectorAll('.click-button');
+
+        // Event Listener für jeden Button hinzufügen
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                totalCount++;  // Zähler erhöhen
+                totalCounterElement.innerText = totalCount;  // Zählerwert im span aktualisieren
+
+                // Zähler anzeigen, wenn er größer als 0 ist
+                if (totalCount > 0) {
+                    totalCounterElement.style.display = 'block';
+                }
+
+                // Klickanzahl in localStorage speichern
+                localStorage.setItem('clickCount', totalCount);
+            });
+        });
+    </script>
+</body>
+
+</html>
