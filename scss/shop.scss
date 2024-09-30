@@ -74,6 +74,10 @@ main {
     article {
         border: 2px black solid;
         width: 75%;
+        padding: 10px;
+        img {
+            height: 250px;
+        }
     }
 }
 
