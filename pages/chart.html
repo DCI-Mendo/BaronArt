@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/chart.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../">Home</a>
+    </nav>
+    <header>
+      <div class="hintergrund">
+        <h1>Baron Art</h1>
+      </div>
+    </header>
+    <main>
+      <!-- Transparente Box mit Text und Button -->
+      <div class="transparent-box" id="clickMessage">
+        <!-- Nachricht wird per JavaScript hinzugefügt -->
+      </div>
+
+      <script>
+        // Klickanzahl aus dem localStorage auslesen
+        const clickCount = localStorage.getItem("clickCount");
+
+        // Überprüfen, ob eine Klickanzahl vorhanden ist
+        if (clickCount !== null) {
+            // Nachricht mit der Klickanzahl anzeigen
+            const message = `Du hast ${clickCount} Artikel zu diesem Preis XXX,XX€.`;
+            document.getElementById("clickMessage").innerHTML = `
+                <p>${message}</p>
+                <button id="backButton">Weiter</button>
+            `;
+
+            // localStorage leeren nach dem Auslesen
+            localStorage.removeItem("clickCount");
+
+            // Event Listener für den "Weiter"-Button
+            document
+                .getElementById("clickMessage")
+                .addEventListener("click", function (event) {
+                    if (event.target.id === "backButton") {
+                        // Weiterleitung basierend auf der Klickanzahl
+                        if (parseInt(clickCount, 10) > 0) {
+                            // Wenn die Klickanzahl größer als 0 ist, zur danke.html weiterleiten
+                            window.location.href = 'danke.html';
+                        } else {
+                            // Wenn die Klickanzahl 0 ist, zur shop.html zurückleiten
+                            window.location.href = 'shop.html';
+                        }
+                    }
+                });
+        } else {
+            // Falls keine Klickanzahl vorhanden ist
+            document.getElementById("clickMessage").innerHTML = `
+                <p>Keine Artikel vorhanden.</p>
+                <button id="backButton">Weiter</button>
+            `;
+
+            // Event Listener für den "Weiter"-Button (keine Artikel)
+            document
+                .getElementById("clickMessage")
+                .addEventListener("click", function (event) {
+                    if (event.target.id === "backButton") {
+                        // Zurück zur shop.html (Seite 1)
+                        window.location.href = 'shop.html';
+                    }
+                });
+        }
+    </script>
+            </main>
+  </body>
+</html>

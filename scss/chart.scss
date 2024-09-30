@@ -1,0 +1,79 @@
+@font-face {
+    font-family: magnificent;
+    src: url(../fonts/Sacramento-Regular.ttf);
+}
+
+body {
+    background-image: url(../images/Hintergrund.jpg);
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    margin: 10px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+main {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+    line-height: 30px;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+}
+
+.hintergrund {
+    position: absolute;
+    top: 0;
+    left: 33%;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(350deg);
+    -webkit-transform: rotate(350deg);
+    font-family: magnificent;
+    color: rgb(141, 148, 245);
+    font-size: 350%;
+    margin: 65px;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.transparent-box {
+    position: fixed;
+    top: 50%;
+    right: 38%;
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.transparent-box button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.transparent-box button:hover {
+    background-color: #e0e0e0;
+}

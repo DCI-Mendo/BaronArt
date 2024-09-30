@@ -1,11 +1,14 @@
 body {
   background-image: url(../images/Hintergrund.jpg);
-  background-size: cover; }
+  background-size: cover;
+}
 
 h1, h2, p, a {
-  color: white; }
+  color: white;
+}
 
 a:visited {
-  color: white; }
+  color: white;
+}
 
 /*# sourceMappingURL=impressum.css.map */
