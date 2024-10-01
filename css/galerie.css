@@ -1,43 +1,67 @@
 @font-face {
   font-family: magnificent;
-  src: url(../fonts/Sacramento-Regular.ttf); }
+  src: url(../fonts/Sacramento-Regular.ttf);
+}
 body {
   background-image: url(../images/Hintergrund.jpg);
-  background-size: cover; }
+  background-size: cover;
+}
 
 nav {
-  margin: 10px; }
+  margin: 10px;
+}
 
 article {
   font-family: magnificent;
-  color: #6593d8;
+  color: rgb(101, 147, 216);
   font-size: 450%;
   margin-left: 35%;
   transform: rotate(350deg);
-  -webkit-transform: rotate(350deg); }
+  -webkit-transform: rotate(350deg);
+}
 
 main {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 80px;
+}
 
 section {
   background-color: rgba(255, 255, 255, 0.449);
-  display: flex; }
-  section div {
-    align-content: center;
-    border: 2px black solid;
-    margin: 15px; }
-    section div p {
-      text-align: center;
-      padding: 25px; }
-    section div img {
-      display: block;
-      width: 50%;
-      margin: auto; }
+  display: flex;
+}
+section div {
+  align-content: center;
+  border: 2px black solid;
+  margin: 15px;
+}
+section div p {
+  text-align: center;
+  padding: 25px;
+}
+section div img {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+footer {
+  text-align: start;
+  padding-bottom: block;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+footer img {
+  height: 50px;
+}
 
 a {
-  color: white; }
+  text-decoration: none;
+  color: white;
+}
 
 a:visited {
-  color: white; }
+  color: white;
+}
 
 /*# sourceMappingURL=galerie.css.map */

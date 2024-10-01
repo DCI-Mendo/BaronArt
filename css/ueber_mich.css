@@ -34,7 +34,19 @@ div {
   -webkit-transform: rotate(350deg);
 }
 
+footer {
+  text-align: start;
+  padding-bottom: block;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+footer img {
+  height: 50px;
+}
+
 a {
+  text-decoration: none;
   color: white;
 }
 
