@@ -24,7 +24,7 @@ article {
 
 main {
     width: 100%;
-    ;
+    margin-bottom: 80px;
 }
 
 section {
@@ -49,7 +49,20 @@ section {
     }
 }
 
+footer {
+    text-align: start;
+    padding-bottom: block;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+
+    img {
+        height: 50px;
+    }
+}
+
 a {
+    text-decoration: none;
     color: white;
 }
 

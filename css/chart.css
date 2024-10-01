@@ -77,4 +77,24 @@ a:visited {
   background-color: #e0e0e0;
 }
 
+footer {
+  text-align: start;
+  padding-bottom: block;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+footer img {
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
 /*# sourceMappingURL=chart.css.map */

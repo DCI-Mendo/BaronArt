@@ -3,10 +3,27 @@ body{
     background-size: cover;
 }
 
-h1, h2, p, a {
+h1, h2, p {
     color: white;
 }
 
-a:visited{
+footer {
+    text-align: start;
+    padding-bottom: block;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+
+    img {
+        height: 50px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
     color: white;
 }
